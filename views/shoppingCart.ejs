@@ -17,7 +17,7 @@
         <span>
           <%= cart[i].name %>
         </span>
-        <span>
+        Total Amount($)<span>
           <%= cart[i].price %>
         </span>
         <span><i class="fa-solid fa-xmark" data-name="<%= cart[i].name %>" data-price="<%= cart[i].price %>"></i></span>
@@ -27,7 +27,7 @@
 
   <h3>Total Amount</h3>
     <p><%= total %><p>
-    <button>Buy Now</button>
+    <button><a href="/thanks">Buy Now</a></button>
     <button><a href="/profile">Go Back</a></button>
 
 

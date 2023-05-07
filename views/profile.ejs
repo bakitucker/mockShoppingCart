@@ -12,11 +12,12 @@
 <div class="container">
 
     <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <h1>Mock Shopping cart</h1>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
 
     <div class="row">
+      <h3>Add the item you want and the price of the item.<br>Press the cart logo to add to the cart and go to the shopping cart to purchase.</h3>
 
         <!-- LOCAL INFORMATION -->
        
@@ -26,7 +27,7 @@
           <% for(var i=0; i<save.length; i++) {%>
             <li class="message">
               <span><%= save[i].name %></span>
-              <span><%= save[i].price %></span>
+              Total Amount($):<span><%= save[i].price %></span>
               <span><i class="fa-solid fa-cart-plus"></i></span>
               <span><i class="fa fa-trash" aria-hidden="true"></i></span>
             </li>

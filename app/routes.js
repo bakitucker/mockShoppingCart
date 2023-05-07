@@ -7,6 +7,10 @@ module.exports = function(app, passport, db) {
         res.render('index.ejs');
     });
 
+    app.get('/thanks', function(req, res) {
+      res.render('thanks.ejs');
+  });   
+
     // PROFILE SECTION =========================
     app.get('/profile', isLoggedIn, function(req, res) {
         db.collection('saveForLater').find().toArray((err, saveForLater) => {
