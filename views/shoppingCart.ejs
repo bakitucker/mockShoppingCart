@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4c83b50b1e.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="shoppingCart.css">
+    <title>Document</title>
+</head>
+<body>
+  
+  <h2>Shopping cart</h2>
+  <ul class="items">
+    <% for(var i=0; i<cart.length; i++) {%>
+      <li class="item">
+        <span>
+          <%= cart[i].name %>
+        </span>
+        <span>
+          <%= cart[i].price %>
+        </span>
+        <span><i class="fa-solid fa-xmark" data-name="<%= cart[i].name %>" data-price="<%= cart[i].price %>"></i></span>
+      </li>
+      <% } %>
+  </ul>
+
+  <h3>Total Amount</h3>
+    <p><%= total %><p>
+    <button>Buy Now</button>
+    <button><a href="/profile">Go Back</a></button>
+
+
+
+        <script src="main.js"></script>
+</body>
+</html>

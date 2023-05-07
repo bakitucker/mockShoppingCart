@@ -1,0 +1,122 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+img{
+  height: 200px;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F8F8F8;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page header */
+.page-header h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+/* Logout button */
+.btn-default {
+  color: #333;
+  border-color: #ccc;
+  background-color: #fff;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+/* Add item form */
+form input[type="text"],
+form input[type="number"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #eee;
+}
+
+form button[type="submit"] {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Save For Later queue */
+.save {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.save .message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.save .message span {
+  margin-right: 10px;
+}
+
+.save .message i {
+  cursor: pointer;
+}
+
+.save .message i.fa-cart-plus {
+  color: #333;
+}
+
+.save .message i.fa-trash {
+  color: #cc0000;
+}
+
+/* Shopping cart */
+.items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.items .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.items .item span {
+  margin-right: 10px;
+}
