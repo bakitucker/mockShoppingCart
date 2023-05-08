@@ -41,7 +41,7 @@ module.exports = function(app, passport, db) {
         if (err) return console.log(err)
         let totalAmount = 0
         shoppingCart.forEach(element => {
-          totalAmount += parseInt(element.price)
+          totalAmount += parseFloat(element.price)
         })
         res.render('shoppingCart.ejs', {
           user : req.user,

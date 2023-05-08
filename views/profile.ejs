@@ -37,8 +37,8 @@
           <h2>add an Item</h2>
         <% if (user.local.email) { %>
           <form action="/messages" method="POST">
-            <input type="text" value=""placeholder="item/gift" name="name">
-            <input type="number" placeholder="price" name="price" step="0.01">
+            <input type="text" value=""placeholder="item/gift" name="name" required>
+            <input type="number" placeholder="price" name="price" step="0.01" required>
             <button type="submit">Submit</button>
           </form>
         </div>
