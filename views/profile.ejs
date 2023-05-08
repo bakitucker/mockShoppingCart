@@ -38,7 +38,7 @@
         <% if (user.local.email) { %>
           <form action="/messages" method="POST">
             <input type="text" value=""placeholder="item/gift" name="name">
-            <input type="number" placeholder="price" name="price">
+            <input type="number" placeholder="price" name="price" step="0.01">
             <button type="submit">Submit</button>
           </form>
         </div>
